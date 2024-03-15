@@ -1,6 +1,6 @@
 # Hangman Game
 
-## 1. What is the Hangman game?
+## 1. What is the Hangman Game?
 Hangman is a classic word-guessing game where one player thinks of a word and the other player tries to guess it by suggesting letters. With each incorrect guess, a part of the hangman is drawn. The game's simplicity and suspense make it a timeless favorite among players of all ages.
 
 ## 2. Project Team
@@ -8,7 +8,7 @@ Hangman is a classic word-guessing game where one player thinks of a word and th
 - Anuj Yadav 2310991783 - Developer: Implements game logic, UI elements, and debugging.
 - Anshul Phondini 2310991781 - Tester: Conducts rigorous testing to identify bugs, provides feedback for improvement, and ensures game stability.
 
-## 3. Instructions for playing the Hangman game
+## 3. Instructions for Playing the Hangman Game
 I. Start the game by running the Python code provided in the repository. Ensure you have Python installed on your system.
 
 II. Guess letters one by one to uncover the secret word. Keep in mind that only lowercase alphabets are accepted as valid inputs.
@@ -19,7 +19,7 @@ IV. Continue guessing until you either reveal the entire word or the hangman is 
 
 V. After each game, you will be prompted to play again. Choose whether to continue playing or exit the game.
 
-## 4. Additional features or notes
+## 4. Additional Features & Notes
 A. Scoring System: A scoring mechanism based on word difficulty and player performance adds a competitive element to the game. Compete with friends or challenge yourself to achieve high scores.
 
 B. Replayability: The game offers a play again option, allowing users to restart after each round, enhancing user engagement. Challenge yourself to beat your previous score or try different word categories for a fresh experience.
