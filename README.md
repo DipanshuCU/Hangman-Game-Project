@@ -6,7 +6,7 @@ Hangman is a classic word-guessing game where one player thinks of a word and th
 ## 2. Project Team
 - Dipanshu Puri 2310991818 - Project Manager: Oversees project planning, coordinates team efforts, and ensures timely delivery.
 - Anuj Yadav 2310991783 - Developer: Implements game logic, UI elements, and debugging.
-- Anshul Phondini 2310991781 - Tester: Conducts rigorous testing to identify bugs, provides feedback for improvement, and ensures game stability.
+- Anshul Phondni 2310991781 - Tester: Conducts rigorous testing to identify bugs, provides feedback for improvement, and ensures game stability.
 
 ## 3. Instructions for Playing the Hangman Game
 I. Start the game by running the Python code provided in the repository. Ensure you have Python installed on your system.
