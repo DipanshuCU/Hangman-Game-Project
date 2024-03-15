@@ -1,4 +1,4 @@
-# Hangman Game
+# The Hangman Game
 
 ## 1. What is the Hangman Game?
 Hangman is a classic word-guessing game where one player thinks of a word and the other player tries to guess it by suggesting letters. With each incorrect guess, a part of the hangman is drawn. The game's simplicity and suspense make it a timeless favorite among players of all ages.
