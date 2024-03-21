@@ -38,7 +38,13 @@ HANGMAN_PICS = ['''
    / \  |
        ===''']
 
-words = 'ant baboon badger bat bear beaver camel cat clam cobra cougar coyote crow deer dog donkey duck eagle ferret fox frog goat goose hawk lion lizard llama mole monkey moose mouse mule newt otter owl panda parrot pigeon python rabbit ram rat raven rhino salmon seal shark sheep skunk sloth snake spider stork swan tiger toad trout turkey turtle weasel whale wolf wombat zebra'.split()
+themes = {
+    "animals": 'ant baboon badger bat bear beaver camel cat clam cobra cougar coyote crow deer dog donkey duck eagle ferret fox frog goat goose hawk lion lizard llama mole monkey moose mouse mule newt otter owl panda parrot pigeon python rabbit ram rat raven rhino salmon seal shark sheep skunk sloth snake spider stork swan tiger toad trout turkey turtle weasel whale wolf wombat zebra'.split(),
+    "fruits": 'apple banana cherry date elderberry fig grapefruit honeydew kiwi lemon mango nectarine orange papaya quince raspberry strawberry tomato ugli fruit vanilla bean watermelon'.split(),
+    "vegetables": 'artichoke beetroot carrot daikon eggplant fennel garlic horseradish iceberg lettuce jicama kale leek mushroom onion potato quinoa radish spinach turnip zucchini'.split(),
+    "countries": 'afghanistan brazil canada denmark ethiopia france germany hungary india japan kenya lebanon mexico netherlands oman poland qatar russia singapore thailand uruguay vietnam wales'.split(),
+    "planets": 'mercury venus earth mars jupiter saturn uranus neptune pluto ceres eris haumea makemake'.split()
+}
 
 # Difficulty levels and corresponding points
 DIFFICULTY_POINTS = {'easy': 1, 'medium': 2, 'hard': 3}
@@ -104,7 +110,23 @@ def playAgain():
     print('Would you like to play again? (y)es or (n)o')
     return input().lower().startswith('y')
 
-print('|_H_A_N_G_M_A_N_|')
+print('|H_A_N_G_M_A_N|')
+
+# Choose theme
+while True:
+    print("Choose a theme:")
+    print("1. Animals")
+    print("2. Fruits")
+    print("3. Vegetables")
+    print("4. Countries")
+    print("5. Planets")
+    theme_choice = input("Enter the number corresponding to your theme choice: ")
+
+    if theme_choice in themes:
+        words = themes[theme_choice]
+        break
+    else:
+        print("Invalid choice. Please enter a number between 1 and 5.")
 
 # Count the number of words
 number_of_words = len(words)
