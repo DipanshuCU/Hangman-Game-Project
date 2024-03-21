@@ -39,11 +39,11 @@ HANGMAN_PICS = ['''
        ===''']
 
 themes = {
-    "animals": 'ant baboon badger bat bear beaver camel cat clam cobra cougar coyote crow deer dog donkey duck eagle ferret fox frog goat goose hawk lion lizard llama mole monkey moose mouse mule newt otter owl panda parrot pigeon python rabbit ram rat raven rhino salmon seal shark sheep skunk sloth snake spider stork swan tiger toad trout turkey turtle weasel whale wolf wombat zebra'.split(),
-    "fruits": 'apple banana cherry date elderberry fig grapefruit honeydew kiwi lemon mango nectarine orange papaya quince raspberry strawberry tomato ugli fruit vanilla bean watermelon'.split(),
-    "vegetables": 'artichoke beetroot carrot daikon eggplant fennel garlic horseradish iceberg lettuce jicama kale leek mushroom onion potato quinoa radish spinach turnip zucchini'.split(),
-    "countries": 'afghanistan brazil canada denmark ethiopia france germany hungary india japan kenya lebanon mexico netherlands oman poland qatar russia singapore thailand uruguay vietnam wales'.split(),
-    "planets": 'mercury venus earth mars jupiter saturn uranus neptune pluto ceres eris haumea makemake'.split()
+    "1": 'ant baboon badger bat bear beaver camel cat clam cobra cougar coyote crow deer dog donkey duck eagle ferret fox frog goat goose hawk lion lizard llama mole monkey moose mouse mule newt otter owl panda parrot pigeon python rabbit ram rat raven rhino salmon seal shark sheep skunk sloth snake spider stork swan tiger toad trout turkey turtle weasel whale wolf wombat zebra'.split(),
+    "2": 'apple banana cherry date elderberry fig grapefruit honeydew kiwi lemon mango nectarine orange papaya quince raspberry strawberry tomato ugli fruit vanilla bean watermelon'.split(),
+    "3": 'artichoke beetroot carrot daikon eggplant fennel garlic horseradish iceberg lettuce jicama kale leek mushroom onion potato quinoa radish spinach turnip zucchini'.split(),
+    "4": 'afghanistan brazil canada denmark ethiopia france germany hungary india japan kenya lebanon mexico netherlands oman poland qatar russia singapore thailand uruguay vietnam wales'.split(),
+    "5": 'mercury venus earth mars jupiter saturn uranus neptune pluto ceres eris haumea makemake'.split()
 }
 
 # Difficulty levels and corresponding points
