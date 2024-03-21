@@ -49,10 +49,17 @@ themes = {
 # Difficulty levels and corresponding points
 DIFFICULTY_POINTS = {'easy': 1, 'medium': 2, 'hard': 3}
 
-def getRandomWord(wordList):
+def getRandomWord(wordList, difficulty):
     """
-    Returns a random string from the passed list of strings.
+    Returns a random string from the passed list of strings based on difficulty level.
     """
+    if difficulty == 'easy':
+        wordList = [word for word in wordList if len(word) <= 4]
+    elif difficulty == 'medium':
+        wordList = [word for word in wordList if 4 < len(word) <= 6]
+    elif difficulty == 'hard':
+        wordList = [word for word in wordList if len(word) > 6]
+
     wordIndex = random.randint(0, len(wordList) - 1)
     return wordList[wordIndex]
 
@@ -103,6 +110,22 @@ def getGuess(alreadyGuessed):
         else:
             return guess
 
+def selectDifficulty():
+    """
+    Returns the selected difficulty level.
+    """
+    while True:
+        print("Choose difficulty level:")
+        print("1. Easy")
+        print("2. Medium")
+        print("3. Hard")
+        difficulty_choice = input("Enter the number corresponding to your difficulty choice: ")
+
+        if difficulty_choice in DIFFICULTY_POINTS:
+            return difficulty_choice
+        else:
+            print("Invalid choice. Please enter a number between 1 and 3.")
+
 def playAgain():
     """
     Returns True if the player wants to play again, False otherwise.
@@ -124,6 +147,7 @@ while True:
 
     if theme_choice in themes:
         words = themes[theme_choice]
+        difficulty = selectDifficulty()
         break
     else:
         print("Invalid choice. Please enter a number between 1 and 5.")
@@ -136,7 +160,7 @@ print("Total number of words:", number_of_words)
 while True:
     missedLetters = ''
     correctLetters = ''
-    secretWord = getRandomWord(words)
+    secretWord = getRandomWord(words, difficulty)
     attempts = 0
 
     while True:
@@ -160,10 +184,4 @@ while True:
             # Check if the player has guessed too many times and lost.
             if len(missedLetters) == len(HANGMAN_PICS) - 1:
                 displayBoard(missedLetters, correctLetters, secretWord)
-                print('You have run out of guesses!\nAfter ' + str(len(missedLetters)) + ' missed guesses and ' + str(len(correctLetters)) + ' correct guesses, the word was "' + secretWord + '"')
-                break
-        attempts += 1
-
-    # If the game is done, ask the player to try again.
-    if not playAgain():
-        break
+                print('You have run out of guesses!\nAfter ' + str(len(missedLetters)) + ' missed guesses and ' + str(len(correctLetters)) + '
