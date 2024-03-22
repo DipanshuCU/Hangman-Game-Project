@@ -49,10 +49,17 @@ themes = {
 # Difficulty levels and corresponding points
 DIFFICULTY_POINTS = {'easy': 1, 'medium': 2, 'hard': 3}
 
-def getRandomWord(wordList):
+def getRandomWord(wordList, difficulty):
     """
-    Returns a random string from the passed list of strings.
+    Returns a random string from the passed list of strings based on difficulty.
     """
+    if difficulty == 'easy':
+        wordList = [word for word in wordList if len(word) <= 4]
+    elif difficulty == 'medium':
+        wordList = [word for word in wordList if 4 < len(word) <= 6]
+    else:  # Hard
+        wordList = [word for word in wordList if len(word) > 6]
+        
     wordIndex = random.randint(0, len(wordList) - 1)
     return wordList[wordIndex]
 
@@ -128,15 +135,25 @@ while True:
     else:
         print("Invalid choice. Please enter a number between 1 and 5.")
 
-# Count the number of words
-number_of_words = len(words)
-print("Total number of words:", number_of_words)
+# Choose difficulty level
+while True:
+    print("Choose difficulty level:")
+    print("1. Easy")
+    print("2. Medium")
+    print("3. Hard")
+    difficulty_choice = input("Enter the number corresponding to your difficulty level choice: ")
+
+    if difficulty_choice in DIFFICULTY_POINTS:
+        difficulty = difficulty_choice
+        break
+    else:
+        print("Invalid choice. Please enter a number between 1 and 3.")
 
 # Now for the game itself:
 while True:
     missedLetters = ''
     correctLetters = ''
-    secretWord = getRandomWord(words)
+    secretWord = getRandomWord(words, difficulty)
     attempts = 0
 
     while True:
