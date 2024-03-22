@@ -143,8 +143,8 @@ while True:
     print("3. Hard")
     difficulty_choice = input("Enter the number corresponding to your difficulty level choice: ")
 
-    if difficulty_choice in DIFFICULTY_POINTS:
-        difficulty = difficulty_choice
+    if difficulty_choice in ['1', '2', '3']:
+        difficulty = ['easy', 'medium', 'hard'][int(difficulty_choice) - 1]
         break
     else:
         print("Invalid choice. Please enter a number between 1 and 3.")
