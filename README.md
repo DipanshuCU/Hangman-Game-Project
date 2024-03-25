@@ -25,3 +25,17 @@ A. Scoring System: A scoring mechanism based on word difficulty and player perfo
 B. Replayability: The game offers a play again option, allowing users to restart after each round, enhancing user engagement. Challenge yourself to beat your previous score or try different word categories for a fresh experience.
 
 C. Modular Structure: The code's organization into functions improves readability and maintainability. Each component of the game is encapsulated within functions, making it easier to understand and modify for future enhancements.
+
+
+ERRORS IN VERSION 1 CODE:
+
+1. *No input validation for theme choice*: If the user enters a non-numeric value for the theme choice, the program will throw an error or produce unexpected behavior. You could add input validation to ensure that the theme choice is a number between 1 and 5.
+
+2. *Scoring calculation might be incorrect*: The scoring calculation in the calculatePoints function doesn't take into account the difficulty level chosen by the player. The function always uses the medium difficulty points regardless of the actual difficulty level selected. You could update the function to consider the difficulty level chosen by the player.
+
+
+ERRORS IN VERSION 2 AND VERSION 3 CODE:
+
+1. *Theme selection error handling*: If the user enters a non-numeric value for the theme choice, the program will not handle it gracefully and may throw an error. You could add input validation to ensure that the theme choice is a number between 1 and 5.
+
+2. *Difficulty selection validation*: Although the difficulty level is selected through numbers 1, 2, or 3, there is no explicit indication of the corresponding difficulty level (easy, medium, hard) in the input prompt. This could lead to confusion for the player, and it would be better to clarify the difficulty levels in the prompt.
