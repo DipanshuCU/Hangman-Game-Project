@@ -21,11 +21,13 @@ IV. Continue guessing until you either reveal the entire word or the hangman is 
 V. After each game, you will be prompted to play again. Choose whether to continue playing or exit the game.
 
 ### 4. Additional Features & Notes
-A. **Scoring System**: A scoring mechanism based on word difficulty and player performance adds a competitive element to the game. Compete with friends or challenge yourself to achieve high scores.
+A. **Theme Selection**: The game offers a variety of themes for players to choose from, including animals, fruits, vegetables, countries, and planets. This feature adds diversity and customization to the gameplay experience, allowing players to select their preferred theme before starting the game.
 
-B. **Replayability**: The game offers a play again option, allowing users to restart after each round, enhancing user engagement. Challenge yourself to beat your previous score or try different word categories for a fresh experience.
+B. **Scoring System**: A scoring mechanism based on word difficulty and player performance adds a competitive element to the game. Compete with friends or challenge yourself to achieve high scores.
 
-C. **Modular Structure**: The code's organization into functions improves readability and maintainability. Each component of the game is encapsulated within functions, making it easier to understand and modify for future enhancements.
+C. **Difficulty Levels**: Players can select from multiple difficulty levels - Easy, Medium, and Hard - each offering a different level of challenge. The difficulty level influences the number of points awarded for each correct guess and adjusts the number of attempts allowed, providing options for players of varying skill levels.
+
+D. **Hangman ASCII Art Display**: The game integrates ASCII art to depict the hangman's figure as players make incorrect guesses. This visual element intensifies suspense, enhancing the game's aesthetics and atmosphere.
 
 ### 5. Version Log
 - **Version 1 Code**
