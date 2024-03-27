@@ -31,13 +31,13 @@ D. **Hangman ASCII Art Display**: The game integrates ASCII art to depict the ha
 
 ### 5. Version Log
 - **Version 1 Code**
-   1. No input validation for theme choice
+   1. Lack of theme selection and error handling
    2. Scoring calculation might be incorrect
       
 - **Version 2 and Version 3 Code**
-   1. Theme selection error handling
-   2. Difficulty selection validation
+   1. Lack of tKinter Graphical User Interface
+   2. Difficulty selection does not correctly validate
       
 - **Version 5 Code**
-   1. Lack of error handling for theme selection
-   2. Absence of difficulty selection validation
+   1. The update_theme_label function is does not correctly update the theme label.
+   2. The create_widgets function doesn't correctly initialize the game interface.
