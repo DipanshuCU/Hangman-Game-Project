@@ -35,3 +35,7 @@ C. **Modular Structure**: The code's organization into functions improves readab
 - **Version 2 and Version 3 Code**
    1. Theme selection error handling
    2. Difficulty selection validation
+      
+- **Version 5 Code**
+   1. Lack of error handling for theme selection
+   2. Absence of difficulty selection validation
